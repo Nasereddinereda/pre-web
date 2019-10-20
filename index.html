@@ -12,6 +12,11 @@
       crossorigin="anonymous"
     />
     <title>Document</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- ******** Section 1  *********** -->
@@ -111,15 +116,15 @@
             consectetur earum repellat quam distinctio excepturi?
           </p>
 
-          <div class="d-flex f-r ml-5 ">
+          <div class="d-flex f-r ml-5 mt-1  ">
             <div class="down">
-              <a href="#page-3" class="btn-down ml-2 smt " id="next1"
+              <a href="#page-3" class="btn-down ml-2 smt " id="next2"
                 >Next Page &nbsp;
                 <i class="fas fa-arrow-circle-down fa-sm  "></i>
               </a>
             </div>
             <div class="up">
-              <a href="#page-1" class="btn-up ml-2 smt " id="next1"
+              <a href="#page-1" class="btn-up ml-2 smt"
                 >Prev Page &nbsp;
                 <i class="fas fa-arrow-circle-up fa-sm "></i>
               </a>
@@ -133,14 +138,133 @@
       </div>
     </section>
     <!-- ******** Section 3  *********** -->
-    <section id="page-3" class="page">aaa</section>
+    <section id="page-3" class="page bg-dark ">
+      <!-- navbar -->
+      <nav class="d-flex f-r jc-sb cl-bl d-none" id="nav3">
+        <a href="#">
+          <div class="logo"></div>
+        </a>
+        <div class="navright d-flex f-r jc-sb">
+          <a href="#" class="btn btn-lg ">HOME</a>
+          <a href="#page-1" class="btn btn-bl ">CONTACT US</a>
+        </div>
+      </nav>
+      <!-- Midle  -->
+      <div>
+        <h1 class="w-100 d-flex  jc-c ft-10 cl-wh  mt-3 " id="findus">
+          <span class="cl-pr">Where to find </span> &nbsp; us !
+        </h1>
+        <h3 class="w-100 d-flex  jc-c  cl-wh ft-25 ">
+          easy way to find us
+        </h3>
+        <h3 class="w-100 d-flex  jc-c  cl-wh  ft-28 ">
+          POS : 1252154,21554
+        </h3>
+        <p class="w-100 d-flex  jc-c ft-3 fn-bl cl-gr-lg">
+          _______________ &nbsp; <i class="fas fa-crosshairs"></i> &nbsp;
+          _______________
+        </p>
+      </div>
+      <div class="d-flex  d-col  w-100 pos-1">
+        <!-- Map  -->
+        <div class="  w-100 d-flex  jc-c">
+          <div id="map1" class="w-7 h-60">
+            <div id="map" class="w-100 h-100"></div>
+          </div>
+        </div>
+
+        <!--Bottom-->
+
+        <div class="d-flex f-r jc-c mt-1  ">
+          <div class="down">
+            <a href="#page-4" class="btn-down ml-2 smt " id="next3"
+              >Next Page &nbsp;
+              <i class="fas fa-arrow-circle-down fa-sm  "></i>
+            </a>
+          </div>
+          <div class="up">
+            <a href="#page-2" class="btn-up ml-2 smt"
+              >Prev Page &nbsp;
+              <i class="fas fa-arrow-circle-up fa-sm "></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- ******** Section 4  *********** -->
-    <section id="page-4" class="page">aaa</section>
+    <section id="page-4" class="page bg-dark">
+      <!-- navbar -->
+      <nav class="d-flex f-r jc-sb cl-bl d-none" id="nav4">
+        <a href="#">
+          <div class="logo"></div>
+        </a>
+        <div class="navright d-flex f-r jc-sb">
+          <a href="#" class="btn btn-lg ">HOME</a>
+          <a href="#page-1" class="btn btn-bl ">CONTACT US</a>
+        </div>
+      </nav>
+
+      <!-- Contact us  -->
+      <div id="con-s4" class="d-none">
+        <div class="d-flex d-col ">
+          <h3 class="w-100 h-15 cl-wh bg-pr mt-20 d-flex d-col jc-c ta-c ft-11">
+            contact us
+          </h3>
+          <div class="h-20 bg-gr-lg w-100 "></div>
+          <div class="h-20 bg-gr w-100 d-flex d-col jc-end  ">
+            <div class="d-flex f-r jc-c mt-1 mb-5 ">
+              <div class="down">
+                <a href="#page-5" class="btn-down ml-2 smt " id="next3"
+                  >Next Page &nbsp;
+                  <i class="fas fa-arrow-circle-down fa-sm  "></i>
+                </a>
+              </div>
+              <div class="up">
+                <a href="#page-3" class="btn-up ml-2 smt"
+                  >Prev Page &nbsp;
+                  <i class="fas fa-arrow-circle-up fa-sm "></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Midle  -->
+      <div class="d-flex f-r jc-ar w-100 pos-2 d-none " id="mid-s4">
+        <!-- M 1  -->
+        <div class="d-flex f-r w-4-vw bg-dark ml-1vw h-18 br-20">
+          <div class="d-flex d-col w-9 ml-2">
+            <h1 class="cl-wh ft-4 mb-1 mt-1v ">ADDRESSE</h1>
+            <hr width="95%" color="#797979" class="mb-3" />
+            <p class="ft-3 cl-wh">Route de l'Arbogne 3</p>
+            <p class="ft-3 cl-wh">1564 Deomdidier</p>
+            <p class="ft-3 cl-wh">Suisse</p>
+          </div>
+          <div class="d-flex d-col jc-c">
+            <i class="fas fa-home cl-pr fa-3x"></i>
+          </div>
+        </div>
+
+        <!-- M 2  -->
+        <div class="d-flex f-r w-4-vw bg-dark mr-1vw  h-18 br-20 ">
+          <div class="d-flex d-col w-9 ml-2 ">
+            <h1 class="cl-wh ft-4 mb-1 mt-1v ">PHONE AND OBLINE</h1>
+            <hr width="95%" color="#797979" class="mb-3" />
+            <p class="ft-3 cl-wh">+412 026 555 555</p>
+            <p class="ft-3 cl-wh">+413 026 555 555</p>
+            <p class="ft-3 cl-wh">musta@zgiwa.com</p>
+          </div>
+          <div class="d-flex d-col jc-c">
+            <i class="fas fa-phone cl-pr fa-3x"></i>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- ******** Section 5  *********** -->
     <section id="page-5" class="page">aaa</section>
 
     <!-- Link Js  -->
-
+    <script src="/mapbox.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
