@@ -108,15 +108,32 @@
   margin: 1% 1.5% 1% 1.5%;
   padding: 2vh 4% 2vh 4%;
   z-index: 2;
-  transform: translateY(-200px);
-  animation: navbar var(--animate-speed) forwards ease-in;
+}
+
+.anim-1-1 {
+  transform: translateY(-15vh);
+  animation: navbar1 var(--animate-speed) forwards ease-in;
   font-family: "Patua One", cursive;
 }
-@keyframes navbar {
+
+@keyframes navbar1 {
   to {
     transform: translateY(0);
   }
 }
+
+.anim-1-2 {
+  transform: translateY(80vh);
+  animation: navbar2 var(--animate-speed) forwards 1;
+  font-family: "Patua One", cursive;
+}
+
+@keyframes navbar2 {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
 .tr {
   background-color: rgba(255, 255, 255, 0.5);
   filter: blur(60px);
@@ -139,6 +156,70 @@
   margin-top: -15px !important ;
 }
 
+/* Section 2 */
+
+.anim-1-s2 {
+  animation: anim-1-s2 2.2s forwards ease-out;
+}
+
+@keyframes anim-1-s2 {
+  to {
+    margin-top: 17vh;
+  }
+}
+.anim-2-s2 {
+  animation: anim-3-s2 3s forwards ease-out;
+}
+
+@keyframes anim-3-s2 {
+  to {
+    font-size: 35px;
+  }
+}
+
+.anim-4-s2 {
+  animation: anim-4-s2 3s forwards ease-out;
+}
+
+@keyframes anim-4-s2 {
+  to {
+    border-radius: 25%;
+  }
+}
+.anim-3-s2 {
+  animation: anim-2-s2 3s forwards ease-out;
+}
+
+@keyframes anim-2-s2 {
+  to {
+    border-radius: 20%;
+  }
+}
+
+/* Bottom section 2  */
+
+.cadre {
+  height: 230px;
+  width: 310px;
+  border: 4px solid var(--primarycolor);
+  /* border-radius: 20%; */
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+
+.image {
+  height: 240px;
+  width: 350px;
+  background-image: url("/sec2.jpg");
+  background-position: center;
+  background-size: cover;
+  /* border-radius: 25%; */
+  position: absolute;
+  top: 0;
+  z-index: 4;
+}
+
 /*  Utils */
 /* ************** color  */
 .cl-b {
@@ -152,12 +233,29 @@
 .cl-gr {
   color: #333;
 }
+.cl-gr-lg {
+  color: rgba(157, 157, 157, 0.7);
+}
 
+.cl-pr {
+  color: var(--primarycolor);
+}
 .cl-wh {
   color: white;
 }
 
+.bg-dark {
+  background: var(--secondarycolor);
+}
+
+.bg-gr {
+  background: rgba(157, 157, 157, 0.3);
+}
+
 /* ************ display */
+.d-none {
+  display: none !important ;
+}
 .d-flex {
   display: flex;
 }
@@ -174,6 +272,10 @@
   justify-content: space-between;
 }
 
+.jc-c {
+  justify-content: center;
+}
+
 /* ******************* botton  */
 
 .btn {
@@ -187,22 +289,35 @@
   justify-content: center;
 }
 
-.down {
+.down,
+.up {
   padding: 20px;
 }
 
-.btn-down {
+.btn-down,
+.btn-up {
   text-decoration: none;
   border-radius: 30px;
-
+  display: inline-block;
   padding: 10px 40px 10px 40px;
   background: var(--primarycolor);
   color: white;
+  font-size: 1.4rem;
+  border: var(--primarycolor) 1px solid;
 }
 
 .btn-down:hover {
   background: var(--secondarycolor);
   border: white 1px solid;
+}
+
+.btn-up {
+  background: none;
+  border: white 1px solid;
+}
+.btn-up:hover {
+  background: var(--primarycolor);
+  border: var(--primarycolor) 1px solid;
 }
 
 .btn-bl {
@@ -225,6 +340,19 @@
   color: var(--primarycolor);
 }
 
+/* TEXT   */
+
+.ft-10 {
+  font-size: 60px;
+}
+
+.ft-45 {
+  font-size: 45px;
+}
+.ft-35 {
+  font-size: 35px;
+}
+
 .ft-5 {
   font-size: 40px;
   font-weight: bold;
@@ -236,20 +364,38 @@
 .ft-3 {
   font-size: 20px !important ;
 }
+.ft-24 {
+  font-size: 24px !important ;
+}
+
+.fn-bl {
+  font-weight: bold;
+}
 
 .li-he {
   line-height: 1;
 }
 
+/* MARGIN / PADING */
+
 .mb-5 {
   margin-bottom: 4vh;
 }
-.mb-4 {
+.mb-3 {
+  margin-bottom: 3vh;
+}
+.mb-2 {
+  margin-bottom: 2vh;
+}
+.mb-1 {
   margin-bottom: 1vh;
 }
 
 .ml-5 {
   margin-left: 5vw;
+}
+.ml-6 {
+  margin-left: 9vw;
 }
 
 .ml-1 {
@@ -259,9 +405,34 @@
   margin-left: 25px;
 }
 
+.mt-5 {
+  margin-top: 20vh;
+}
+.mt-3 {
+  margin-top: 10vh;
+}
+.mt-2 {
+  margin-top: 5vh;
+}
+
+.mt-1 {
+  margin-top: 6px;
+}
+.mt-h {
+  margin-top: 50vh;
+}
+
 .w-60 {
   width: 100%;
 }
+
+.w-6 {
+  width: 60%;
+}
+.w-4 {
+  width: 40%;
+}
+
 .w-100 {
   width: 100vw !important ;
 }
@@ -272,4 +443,17 @@
 
 .br-30 {
   border-radius: 30px;
+}
+.br-20 {
+  border-radius: 20px;
+}
+
+.pt-5 {
+  padding-top: 23px;
+}
+
+/* TEXT */
+.pos {
+  position: absolute;
+  top: 145vh;
 }

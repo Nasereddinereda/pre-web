@@ -24,7 +24,7 @@
               <!-- Navbar -->
               <div>
                 <div class="tr"></div>
-                <nav class="nav d-flex f-r jc-sb cl-bl ">
+                <nav class="nav d-flex f-r jc-sb cl-bl anim-1-1">
                   <a href="#">
                     <div class="logo"></div>
                   </a>
@@ -41,14 +41,14 @@
                   <p class="ft-5 cl-b anim2 ">THIS IS OUR MISSION</p>
                 </div>
 
-                <p class="ft-3  mb-4 ml-1 cl-wh w-100" id="text">
+                <p class="ft-3  mb-1 ml-1 cl-wh w-100" id="text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
                   odio, sequi tenetur debitis delectus aperiam quaerat .
                 </p>
 
                 <div class="anim4 down">
-                  <a href="#page-2" class="btn-down ml-2 smt "
-                    >Next Page &nbsp; <i class="fas fa-sort-down"></i>
+                  <a href="#page-2" class="btn-down ml-2 smt " id="next1"
+                    >Next Page &nbsp;<i class="fas fa-arrow-circle-down"></i>
                   </a>
                 </div>
               </div>
@@ -58,8 +58,79 @@
       </div>
     </section>
     <!-- ******** Section 2  *********** -->
-    <section id="page-2" class="page">
-      <a href="#page-1" class="btn btn-bl ">HOME</a>
+    <section id="page-2" class="page bg-dark">
+      <!-- Navbar -->
+
+      <nav class="d-flex f-r jc-sb cl-bl d-none" id="nav2">
+        <a href="#">
+          <div class="logo"></div>
+        </a>
+        <div class="navright d-flex f-r jc-sb">
+          <a href="#" class="btn btn-lg ">HOME</a>
+          <a href="#page-1" class="btn btn-bl ">CONTACT US</a>
+        </div>
+      </nav>
+      <!-- Midle  -->
+      <div class="mt-3 " id="aboutus">
+        <h1 class="w-100 d-flex  jc-c ft-10 cl-wh">
+          <span class="cl-pr ">ABOUT &nbsp; </span> US
+        </h1>
+        <h3 class="w-100 d-flex  jc-c  cl-wh  mb-2 ft-35 ">
+          WHO WE ARE
+        </h3>
+        <p class="w-100 d-flex  jc-c ft-3 fn-bl cl-gr-lg">
+          _______________ &nbsp; <i class="far fa-smile"></i> &nbsp;
+          _______________
+        </p>
+      </div>
+      <!-- Bottom  -->
+      <div class=" d-flex f-r jc-sb  w-100 pos  ">
+        <div class="w-6">
+          <h2 class="cl-wh ft-3 ml-5 mb-no mb-1" id="whoweare">
+            WE ARE WORDCODE
+          </h2>
+
+          <hr width="40%" class="ml-5 mb-3" color="#797979" />
+
+          <p class="ml-5 cl-wh mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            accusamus saepe laborum illum dolorem dignissimos incidunt veritatis
+            possimus omnis reiciendis officiis provident reprehenderit pariatur
+            placeat beatae nesciunt eius deleniti dolorum, asperiores officia
+            impedit porro. Voluptatem nisi exercitationem hic sed fugit
+            doloremque laudantium voluptates! Odio .
+          </p>
+          <div class="d-flex f-r jc-sb ml-5 ft-3 fn-bl mb-3">
+            <h3 class="cl-wh">OUR MISSION</h3>
+            <h3 class="cl-pr">OUR ADVANTAGES</h3>
+            <h3 class="cl-wh">OUR GAURANTESS</h3>
+          </div>
+          <p class="ml-5 cl-wh">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Reprehenderit, distinctio veritatis. Cupiditate quisquam inventore
+            consectetur earum repellat quam distinctio excepturi?
+          </p>
+
+          <div class="d-flex f-r ml-5 ">
+            <div class="down">
+              <a href="#page-3" class="btn-down ml-2 smt " id="next1"
+                >Next Page &nbsp;
+                <i class="fas fa-arrow-circle-down fa-sm  "></i>
+              </a>
+            </div>
+            <div class="up">
+              <a href="#page-1" class="btn-up ml-2 smt " id="next1"
+                >Prev Page &nbsp;
+                <i class="fas fa-arrow-circle-up fa-sm "></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-4">
+          <div class="cadre ml-6 " id="cadre"></div>
+          <div class="image ml-5 mt-2" id="image"></div>
+        </div>
+      </div>
     </section>
     <!-- ******** Section 3  *********** -->
     <section id="page-3" class="page">aaa</section>
@@ -77,5 +148,6 @@
     ></script>
     <script src="/smooth.js"></script>
     <script src="/anim3.js"></script>
+    <script src="/animation.js"></script>
   </body>
 </html>
