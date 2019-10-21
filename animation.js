@@ -29,3 +29,11 @@ document.getElementById("next3").addEventListener("click", function() {
       "anim-2-s4 d-flex f-r jc-ar w-100 pos-2 ";
   }, 700);
 });
+
+document.getElementById("next4").addEventListener("click", function() {
+  setTimeout(() => {
+    // document.getElementById("nav5").className =
+    //   "nav d-flex f-r jc-sb cl-bl anim-nav-s5  bg-gr br-20 pt-5 ";
+    document.getElementById("anim-foot").className = "anim-foot";
+  }, 700);
+});
