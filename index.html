@@ -8,7 +8,7 @@
     <link
       rel="stylesheet"
       href="/mobile.css"
-      media="screen and (max-width: 768px)"
+      media="screen and (max-width: 1200px)"
     />
     <link
       rel="stylesheet"
@@ -40,12 +40,33 @@
               <div>
                 <div class="tr"></div>
                 <nav class="nav d-flex f-r jc-sb cl-bl anim-1-1">
-                  <a href="#">
+                  <a href="#page-1">
                     <div class="logo d-nono-mobile"></div>
                   </a>
                   <div class="navright d-flex f-r jc-sb">
-                    <a href="#" class="btn btn-lg "> Accueil </a>
-                    <a href="#" class="btn btn-bl "> Contactez-nous</a>
+                    <a href="#page-1" class="btn btn-lg smt cl-pr ">
+                      Accueil
+                    </a>
+                    <a href="#page-2" class="btn btn-lg smt" id="about-us">
+                      Sur nous
+                    </a>
+                    <a href="#page-3" class="btn btn-lg smt" id="addr-esse">
+                      Addresse
+                    </a>
+                    <a
+                      href="#page-4"
+                      class="btn btn-lg mr-2vw smt"
+                      id="info-rmation"
+                    >
+                      Information
+                    </a>
+                    <a
+                      href="#page-5"
+                      class="ft-mob  btn btn-bl smt "
+                      id="con-nous"
+                    >
+                      Contactez-nous
+                    </a>
                   </div>
                 </nav>
               </div>
@@ -64,10 +85,21 @@
                 </p>
 
                 <div class="anim4 down">
-                  <a href="#page-2" class="btn-down ml-2 smt " id="next1"
-                    >Next Page &nbsp;<i class="fas fa-arrow-circle-down"></i>
+                  <a
+                    href="#page-5"
+                    class="ft-mob  btn-down ml-2 smt p-down mb-10vh-mob "
+                    id="next1"
+                    >Contactez-nous &nbsp;<i class="far fa-address-card "></i>
                   </a>
                 </div>
+
+                <a
+                  href="#page-2"
+                  class="w-100 d-flex  jc-c chev smt "
+                  id="chev-down"
+                >
+                  <i class="fas fa-chevron-down"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -78,13 +110,26 @@
     <section id="page-2" class="page bg-dark">
       <!-- Navbar -->
 
-      <nav class="d-flex f-r jc-sb cl-bl d-none" id="nav2">
-        <a href="#">
+      <nav class="d-none" id="nav2">
+        <a href="#page-1" class="smt">
           <div class="logo d-nono-mobile"></div>
         </a>
         <div class="navright d-flex f-r jc-sb">
-          <a href="#" class="btn btn-lg ">Accueil </a>
-          <a href="#page-1" class="btn btn-bl ">Contactez-nous</a>
+          <a href="#page-1" class="btn btn-lg smt">
+            Accueil
+          </a>
+          <a href="#page-2" class="btn btn-lg smt cl-pr " id="about-us-1">
+            Sur nous
+          </a>
+          <a href="#page-3" class="btn btn-lg smt" id="addr-esse-1">
+            Addresse
+          </a>
+          <a href="#page-4" class="btn btn-lg mr-2vw smt" id="info-rmation-1">
+            Information
+          </a>
+          <a href="#page-5" class="btn btn-bl smt" id="con-nous-1">
+            Contactez-nous</a
+          >
         </div>
       </nav>
       <!-- Midle  -->
@@ -148,21 +193,34 @@
           </div>
         </div>
         <div class="w-4 d-nono-mobile ">
-          <div class="cadre ml-6 " id="cadre"></div>
-          <div class="image ml-5 mt-2" id="image"></div>
+          <div class="cadre ml-6" id="cadre"></div>
+          <div class="image ml-5 mt-2 " id="image"></div>
         </div>
       </div>
     </section>
     <!-- ******** Section 3  *********** -->
     <section id="page-3" class="page bg-dark ">
       <!-- navbar -->
-      <nav class="d-flex f-r jc-sb cl-bl d-none" id="nav3">
-        <a href="#">
+      <nav class="d-none" id="nav3">
+        <a href="#page-1" class="smt">
           <div class="logo d-nono-mobile"></div>
         </a>
         <div class="navright d-flex f-r jc-sb">
-          <a href="#" class="btn btn-lg ">Accueil</a>
-          <a href="#page-1" class="btn btn-bl ">Contactez-nous</a>
+          <a href="#page-1" class="btn btn-lg smt">
+            Accueil
+          </a>
+          <a href="#page-2" class="btn btn-lg smt  " id="about-us-2">
+            Sur nous
+          </a>
+          <a href="#page-3" class="btn btn-lg smt cl-pr" id="addr-esse-2">
+            Addresse
+          </a>
+          <a href="#page-4" class="btn btn-lg mr-2vw smt" id="info-rmation-2">
+            Information
+          </a>
+          <a href="#page-5" class="btn btn-bl smt" id="con-nous-2">
+            Contactez-nous</a
+          >
         </div>
       </nav>
       <!-- Midle  -->
@@ -200,7 +258,7 @@
             </a>
           </div>
           <div class="up">
-            <a href="#page-2" class="btn-up ml-2 smt m-mob-n"
+            <a href="#page-2" class="btn-up ml-2 smt m-mob-n " id="prev-3"
               >Prev Page &nbsp;
               <i class="fas fa-arrow-circle-up fa-sm "></i>
             </a>
@@ -211,13 +269,30 @@
     <!-- ******** Section 4  *********** -->
     <section id="page-4" class="page bg-dark ">
       <!-- navbar -->
-      <nav class="d-flex f-r jc-sb cl-bl d-none" id="nav4">
-        <a href="#">
-          <div class="logod-nono-mobile "></div>
+      <nav class="d-none" id="nav4">
+        <a href="#page-1" class="smt">
+          <div class="logo d-nono-mobile"></div>
         </a>
         <div class="navright d-flex f-r jc-sb">
-          <a href="#" class="btn btn-lg ">Accueil</a>
-          <a href="#page-1" class="btn btn-bl ">Contactez-nous</a>
+          <a href="#page-1" class="btn btn-lg smt">
+            Accueil
+          </a>
+          <a href="#page-2" class="btn btn-lg smt  " id="about-us-3">
+            Sur nous
+          </a>
+          <a href="#page-3" class="btn btn-lg smt " id="addr-esse-3">
+            Addresse
+          </a>
+          <a
+            href="#page-4"
+            class="btn btn-lg mr-2vw smt cl-pr"
+            id="info-rmation-3"
+          >
+            Information
+          </a>
+          <a href="#page-5" class="btn btn-bl smt" id="con-nous-3">
+            Contactez-nous</a
+          >
         </div>
       </nav>
 
@@ -237,7 +312,7 @@
               </a>
             </div>
             <div class="up">
-              <a href="#page-3" class="btn-up ml-2 smt m-mob-n"
+              <a href="#page-3" class="btn-up ml-2 smt m-mob-n" id="prev-4"
                 >Prev Page &nbsp;
                 <i class="fas fa-arrow-circle-up fa-sm "></i>
               </a>
@@ -253,9 +328,9 @@
           <div class="d-flex d-col w-9 ml-2">
             <h1 class="cl-wh ft-30  mb-1 mt-1v ">ADDRESSE</h1>
             <hr width="95%" color="#797979" class="mb-3" />
-            <p class="ft-3 cl-wh">Route de l'Arbogne 3</p>
-            <p class="ft-3 cl-wh">1564 Domdidier</p>
-            <p class="ft-3 cl-wh">Suisse</p>
+            <p class="ft-3 ft-33-res cl-wh">Route de l'Arbogne 3</p>
+            <p class="ft-3 ft-33-res cl-wh">1564 Domdidier</p>
+            <p class="ft-3 ft-33-res cl-wh">Suisse</p>
           </div>
           <div class="d-flex d-col jc-c">
             <i class="fas fa-home cl-pr fa-3x"></i>
@@ -269,9 +344,9 @@
           <div class="d-flex d-col w-9 ml-2 ">
             <h1 class="cl-wh ft-30  mb-1 mt-1v ">TÉLÉPHONE ET EN LIGNE</h1>
             <hr width="95%" color="#797979" class="mb-3" />
-            <p class="ft-3 cl-wh">+41 (0)26 552 09 50</p>
-            <p class="ft-3 cl-wh">+41 (0)26 552 09 51</p>
-            <p class="ft-3 cl-wh">info@workcode.ch</p>
+            <p class="ft-3  ft-33-res cl-wh">+41 (0)26 552 09 50</p>
+            <p class="ft-3 ft-33-res cl-wh">+41 (0)26 552 09 51</p>
+            <p class="ft-3 ft-33-res cl-wh">info@workcode.ch</p>
           </div>
           <div class="d-flex d-col jc-c">
             <i class="fas fa-phone cl-pr fa-3x"></i>
@@ -282,18 +357,33 @@
     <!-- ******** Section 5  *********** -->
     <section id="page-5" class="page bg-dark d-flex d-col page-mob-120 ">
       <!-- Navbar  -->
+
       <nav
         class="nav d-flex f-r jc-sb cl-bl anim-nav-s5  bg-gr br-20 pt-5"
         id="nav5"
       >
-        <a href="#">
+        <a href="#page-1" class="smt">
           <div class="logo d-nono-mobile"></div>
         </a>
         <div class="navright d-flex f-r jc-sb">
-          <a href="#" class="btn btn-lg ">Accueil </a>
-          <a href="#page-4" class="btn btn-bl smt "> précédent </a>
+          <a href="#page-1" class="btn btn-lg smt">
+            Accueil
+          </a>
+          <a href="#page-2" class="btn btn-lg smt  " id="about-us-4">
+            Sur nous
+          </a>
+          <a href="#page-3" class="btn btn-lg smt " id="addr-esse-4">
+            Addresse
+          </a>
+          <a href="#page-4" class="btn btn-lg mr-2vw smt" id="info-rmation-4">
+            Information
+          </a>
+          <a href="#page-4" class="btn btn-bl smt" id="con-nous-4">
+            précédent
+          </a>
         </div>
       </nav>
+
       <div id="anim-foot" class="d-none">
         <!-- Midle  -->
         <div class="w-100 h-70  mt-20 con-us ">
@@ -334,10 +424,11 @@
                 </span>
                 <input type="text" placeholder="email" />
               </div>
-              <div class="btn-span d-flex f-r" >
-                <a class="a-span  mob-col " href="#">Envoyer le message </a>
+              <div class="btn-span d-flex f-r">
+                <a class="a-span  mob-col ft-20" href="#"
+                  >Envoyer le message
+                </a>
               </div>
-              
             </div>
           </div>
         </div>
