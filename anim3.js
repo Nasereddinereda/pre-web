@@ -1,36 +1,24 @@
 var text = document.getElementById("text");
 var newDom = "";
 var animationDelay = 6;
-
-var isMobile = false; //initiate as false
-// device detection
-if (
-  navigator.userAgent.match(/Android/i) ||
-  navigator.userAgent.match(/webOS/i) ||
-  navigator.userAgent.match(/iPhone/i) ||
-  navigator.userAgent.match(/iPad/i) ||
-  navigator.userAgent.match(/iPod/i) ||
-  navigator.userAgent.match(/BlackBerry/i) ||
-  navigator.userAgent.match(/Windows Phone/i)
-) {
-  isMobile = true;
-}
-
-if (isMobile === "true") {
-  var x = 20,
-    y = 20;
+var cont = 0;
+if (document.body.offsetWidth > 768) {
+  var x = 35,
+    y = 40;
 } else {
-  var x = 50,
-    y = 50;
+  var x = 35,
+    y = 40;
 }
-
-console.log(x, y);
 
 for (let i = 0; i < text.innerText.length; i++) {
   if (i >= x && text.innerText[i] == " ") {
     newDom += "<br/>";
-    x += y;
+    x += y + cont;
+    cont = 0;
   } else {
+    if (i >= x) {
+      cont++;
+    }
     newDom +=
       '<span class="char">' +
       (text.innerText[i] == " " ? "&nbsp;" : text.innerText[i]) +
