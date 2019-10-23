@@ -413,11 +413,11 @@
   color: var(--primarycolor) !important ;
 }
 .cl-wh {
-  color: white;
+  color: white !important  ;
 }
 
 .bg-pr {
-  background: var(--primarycolor);
+  background: var(--primarycolor) !important ;
 }
 
 .bg-dark {
