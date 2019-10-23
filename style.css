@@ -194,7 +194,7 @@
 
 @keyframes anim-3-s2-mob {
   to {
-    font-size: 25px;
+    font-size: 27px;
   }
 }
 
@@ -235,6 +235,7 @@
   height: 240px;
   width: 350px;
   background-image: url("/contactus.jpg");
+  /* background: chartreuse; */
   background-position: center;
   background-size: cover;
   /* border-radius: 25%; */
@@ -286,7 +287,7 @@
 @keyframes anim-2-s3-mob {
   to {
     width: 70%;
-    height: 47vh;
+    height: 48vh;
     border-radius: 30px;
   }
 }
@@ -561,6 +562,28 @@
   color: rgba(157, 157, 157, 1);
 }
 
+.a-span {
+  width: 100%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border: 1px var(--primarycolor) solid;
+  outline: none;
+  color: white;
+  background: var(--primarycolor);
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.a-span:hover {
+  background: none;
+  border: 1px solid white;
+}
+
 .msg-inp {
   padding: 10px;
   width: 70vw;
@@ -572,24 +595,6 @@
   border-radius: 20px;
   font-size: 20px;
 }
-
-.a-span {
-  border-radius: 30px;
-  padding: 10px 6.4vw 10px 6.4vw;
-  outline: none;
-  color: white;
-  background: var(--primarycolor);
-  text-decoration: none;
-  font-size: 20px;
-  margin-left: 6.5vw;
-  border: 1px var(--primarycolor) solid;
-}
-
-.a-span:hover {
-  background: none;
-  border: 1px solid white;
-}
-
 /* TEXT   */
 
 .ta-c {
@@ -720,6 +725,9 @@
 .mt-2 {
   margin-top: 5vh;
 }
+.mt-2vh {
+  margin-top: 2vh;
+}
 .mt-17 {
   margin-top: 17vh;
 }
@@ -742,10 +750,16 @@
   width: 100%;
 }
 
+.m-auto {
+  margin: auto;
+}
 .w-6 {
   width: 60%;
 }
 
+.w-5 {
+  width: 50%;
+}
 .w-7 {
   width: 80%;
 }
@@ -831,9 +845,22 @@
 .chev {
   text-decoration: none;
   font-size: 80px;
-  color: rgba(157, 157, 157, 0.4);
+  color: rgba(157, 157, 157, 0.7);
 }
 
 .chev:hover {
-  color: rgba(157, 157, 157, 0.6);
+  color: rgba(157, 157, 157, 0.9);
+}
+
+.a {
+  width: 44%;
+  height: 7vh;
+}
+.b {
+  width: 44%;
+  height: 7vh;
+}
+
+.d-none-wid {
+  display: none;
 }

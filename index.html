@@ -8,8 +8,9 @@
     <link
       rel="stylesheet"
       href="/mobile.css"
-      media="screen and (max-width: 1200px)"
+      media="screen and (max-width: 1000px)"
     />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -39,7 +40,7 @@
               <!-- Navbar -->
               <div>
                 <div class="tr"></div>
-                <nav class="nav d-flex f-r jc-sb cl-bl anim-1-1">
+                <nav class="nav d-flex f-r jc-sb cl-bl anim-1-1" id="nav1">
                   <a href="#page-1">
                     <div class="logo d-nono-mobile"></div>
                   </a>
@@ -65,7 +66,8 @@
                       class="ft-mob  btn btn-bl smt "
                       id="con-nous"
                     >
-                      Contactez-nous
+                      <span class="d-nono-mobile"> Contactez-nous </span>
+                      <span class="d-none-wid ft-12-mob "> Contacte </span>
                     </a>
                   </div>
                 </nav>
@@ -89,7 +91,8 @@
                     href="#page-5"
                     class="ft-mob  btn-down ml-2 smt p-down mb-10vh-mob "
                     id="next1"
-                    >Contactez-nous &nbsp;<i class="far fa-address-card "></i>
+                  >
+                    Contactez-nous
                   </a>
                 </div>
 
@@ -128,8 +131,9 @@
             Information
           </a>
           <a href="#page-5" class="btn btn-bl smt" id="con-nous-1">
-            Contactez-nous</a
-          >
+            <span class="d-nono-mobile"> Contactez-nous </span>
+            <span class="d-none-wid"> Contacte </span>
+          </a>
         </div>
       </nav>
       <!-- Midle  -->
@@ -155,20 +159,20 @@
 
           <hr width="40%" class="ml-5 mb-3-mob mb-3" color="#797979" />
 
-          <p class="ml-5 cl-wh mb-5">
+          <p class="ml-5 cl-wh mb-5  ft-mob  ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
             accusamus saepe laborum illum dolorem dignissimos incidunt veritatis
             possimus omnis reiciendis officiis provident reprehenderit pariatur
             placeat beatae nesciunt eius deleniti dolorum, asperiores officia
             impedit porro. Voluptatem nisi exercitationem hic sed fugit
-            doloremque laudantium voluptates! Odio .
+            doloremque laudantium voluptates!.
           </p>
           <div class="d-flex f-r jc-sb ml-5 ft-3 fn-bl mb-3 m-r-mob ">
             <h3 class="cl-wh">OUR MISSION</h3>
             <h3 class="cl-pr">OUR ADVANTAGES</h3>
             <h3 class="cl-wh">OUR GAURANTESS</h3>
           </div>
-          <p class="ml-5 cl-wh">
+          <p class="ml-5 cl-wh ft-mob ">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Reprehenderit, distinctio veritatis. Cupiditate quisquam inventore
             consectetur earum repellat quam distinctio excepturi?
@@ -219,8 +223,9 @@
             Information
           </a>
           <a href="#page-5" class="btn btn-bl smt" id="con-nous-2">
-            Contactez-nous</a
-          >
+            <span class="d-nono-mobile"> Contactez-nous </span>
+            <span class="d-none-wid"> Contacte </span>
+          </a>
         </div>
       </nav>
       <!-- Midle  -->
@@ -291,8 +296,9 @@
             Information
           </a>
           <a href="#page-5" class="btn btn-bl smt" id="con-nous-3">
-            Contactez-nous</a
-          >
+            <span class="d-nono-mobile"> Contactez-nous </span>
+            <span class="d-none-wid"> Contacte </span>
+          </a>
         </div>
       </nav>
 
@@ -378,8 +384,9 @@
           <a href="#page-4" class="btn btn-lg mr-2vw smt" id="info-rmation-4">
             Information
           </a>
-          <a href="#page-4" class="btn btn-bl smt" id="con-nous-4">
-            précédent
+          <a href="#page-5" class="btn btn-bl smt" id="con-nous-4">
+            <span class="d-nono-mobile"> Contactez-nous </span>
+            <span class="d-none-wid"> Contacte </span>
           </a>
         </div>
       </nav>
@@ -396,45 +403,55 @@
             >
               Nous vous répondons après avoir lu le message avec joie et plaisir
             </h4>
-            <!-- Botton  -->
-            <div class="d-flex f-r  jc-c mb-2 mob-col ">
-              <div class="btn-span d-flex f-r mr-3vw ">
-                <span>
-                  <i class="fas fa-user"></i>
-                </span>
-                <input type="text" placeholder="Nom" />
+
+            <!-- Bottom -->
+            <div class="d-flex f-r  jc-sb  mob-col w-6 m-auto">
+              <div class="a mb-3-mob ">
+                <div class="btn-span d-flex f-r ">
+                  <span>
+                    <i class="fas fa-user"></i>
+                  </span>
+                  <input type="text" placeholder="Nom" />
+                </div>
               </div>
-              <div class="btn-span d-flex f-r ml-3vw ">
-                <span>
-                  <i class="far fa-user"></i>
-                </span>
-                <input type="text" placeholder="Prénom" />
+              <div class="b mb-1-mob ">
+                <div class="btn-span d-flex f-r ">
+                  <span>
+                    <i class="far fa-user"></i>
+                  </span>
+                  <input type="text" placeholder="Prénom" />
+                </div>
               </div>
             </div>
             <!-- input  -->
-            <div class="d-flex f-r jc-c mb-2 ">
+            <div class="d-flex f-r jc-c mb-2 mt-2vh">
               <textarea class="msg-inp "> </textarea>
             </div>
 
             <!-- Botton  -->
-            <div class="d-flex f-r jc-c mob-col ">
-              <div class="btn-span d-flex f-r ">
-                <span>
-                  <i class="far fa-envelope"></i>
-                </span>
-                <input type="text" placeholder="email" />
+
+            <div class="d-flex f-r  jc-sb  mob-col w-6 m-auto">
+              <div class="a mb-3-mob mt-1-mob">
+                <div class="btn-span d-flex f-r ">
+                  <span>
+                    <i class="far fa-envelope"></i>
+                  </span>
+                  <input type="text" placeholder="Email" />
+                </div>
               </div>
-              <div class="btn-span d-flex f-r">
-                <a class="a-span  mob-col ft-20" href="#"
-                  >Envoyer le message
-                </a>
+              <div class="b mb-1-mob ">
+                <div class="btn-span d-flex ">
+                  <a class="a-span  ft-mob mtm-mob-res  mob-col" href="#"
+                    >Envoyer le message
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="d-flex d-col ta-c jc-c cl-wh  h-10  ">
           <p class="ft-24">
-            &copy; 2019 wordcode.com | mustafa lounici | algeria
+            &copy; 2019 workcode.com | mustafa lounici | algeria
           </p>
         </div>
       </div>
